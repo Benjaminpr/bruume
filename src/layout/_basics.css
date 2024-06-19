@@ -1,0 +1,91 @@
+:root {
+	--bg-color: #f7f5e8;
+	--base-font-size: 1.6rem;
+	--font-color: #111111;
+	--title-font-weight: 600;
+	--main-font-family: system-ui, sans-serif;
+	--h1-font-size: 3rem;
+	--h2-font-size: 2.8rem;
+	--h3-font-size: 2.6rem;
+	--h4-font-size: 2.4rem;
+	--h5-font-size: 2.2rem;
+	--h6-font-size: 1.8rem;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	line-height: 1.15;
+	text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: var(--bg-color);
+	margin: 0;
+	padding: 0;
+	font-size: var(--base-font-size);
+	font-family: var(--main-font-family);
+	color: var(--font-color);
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: var(--title-font-weight);
+	margin: 1rem 0 2rem;
+}
+
+h1,
+.h1 {
+	font-size: (--h1-font-size);
+}
+
+h2,
+.h2 {
+	font-size: (--h2-font-size);
+}
+
+h3,
+.h3 {
+	font-size: (--h3-font-size);
+}
+
+h4,
+.h4 {
+	font-size: (--h4-font-size);
+}
+
+h5,
+.h5 {
+	font-size: (--h5-font-size);
+}
+
+h6,
+.h6 {
+	font-size: (--h6-font-size);
+}
+
+button {
+  font-family: inherit;
+}

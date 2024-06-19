@@ -1,0 +1,45 @@
+:root {
+	--btn-bg-color: var(--primary-color);
+	--btn-text-color: #fff;
+	--btn-border-color: var(--primary-color);
+	--btn-hover-bg-color: var(--primary-color-hover);
+	--btn-hover-border-color: var(--primary-color-hover);
+    --btn-alt-bg-color: var(--secondary-color);
+    --btn-alt-text-color: #fff;
+    --btn-alt-border-color: var(--secondary-color);
+    --btn-alt-hover-bg-color: var(--secondary-color-hover);
+    --btn-alt-hover-border-color: var(--secondary-color-hover);
+	--btn-padding: 0.5rem 1rem;
+	--btn-border-radius: 0.25rem;
+	--btn-font-size: 1.6rem;
+	--btn-font-weight: 400;
+    --btn-text-transform: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: var(--btn-padding);
+	border: 1px solid var(--btn-border-color);
+	border-radius: var(--btn-border-radius);
+	background-color: var(--btn-bg-color);
+	color: var(--btn-text-color);
+	font-size: var(--btn-font-size);
+	font-weight: var(--btn-font-weight);
+    text-transform: var(--btn-text-transform);
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	&:hover {
+		background-color: var(--btn-hover-bg-color);
+		border-color: var(--btn-hover-border-color);
+	}
+}
+.btn-alt {
+    background-color: var(--btn-alt-bg-color);
+    color: var(--btn-alt-text-color);
+    border-color: var(--btn-alt-border-color);
+    &:hover {
+        background-color: var(--btn-alt-hover-bg-color);
+        border-color: var(--btn-alt-hover-border-color);
+      }
+  }

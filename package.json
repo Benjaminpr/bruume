@@ -1,0 +1,23 @@
+{
+  "name": "bruume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss --use postcss-import postcss-combine-duplicated-selectors -o dist/brume.css src/brume.css --no-map",
+    "buildmin": "postcss --use postcss-import postcss-combine-duplicated-selectors cssnano -o dist/brume.min.css src/brume.css --no-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cssnano": "^7.0.1",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}
